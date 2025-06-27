@@ -1,7 +1,6 @@
 This repository implements an MCP for mitmproxy.
 
-Mitmproxy is a very popular tool to inspect network requests via a proxy.
-https://github.com/mitmproxy/mitmproxy
+[Mitmproxy](https://github.com/mitmproxy/mitmproxy) is a very popular tool to inspect network requests via a proxy.
 
 We can put any Middesk service behind mitmproxy to inspect requests sent to it.
 

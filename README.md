@@ -1,6 +1,8 @@
+# Mitm-mcp
 This repository implements an MCP for mitmproxy. [Mitmproxy](https://github.com/mitmproxy/mitmproxy) is a very popular tool to inspect network requests via a proxy.
+<img width="400" alt="Screenshot 2025-06-27 at 1 31 07 PM" src="https://github.com/user-attachments/assets/0d6434b0-5dc5-4d4d-8308-4b7b5b3438ea" />
 
-Using this MCP, we can do things like:
+We can extend mitmproxy with an MCP to do things like:
 ```
 > Can you see the most recent flow that I've sent?
   ⎿ {
@@ -24,7 +26,7 @@ Using this MCP, we can do things like:
   registrations. The request was authenticated with a Bearer token and
   returned a 200 OK status.
 ```
-
+## Setup
 We need to start mitmproxy and the mcp server. Mitmproxy pushes messages to the mcp server via a python script.
 
 Here's how to get started:
@@ -41,6 +43,6 @@ claude mcp add --scope user mitm-proxy -- [YOUR-WORKSPACE]/mitm-mcp/start-mcp.sh
 ```
 
 Now restart your LLM and you should see the tool calls:
-list_flows
-clear_flows
-read_flow
+* `list_flows`
+* `clear_flows`
+* `read_flow`
